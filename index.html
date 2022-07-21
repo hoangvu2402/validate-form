@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate-form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="heading">
+        <p>VALIDATE  FORM</p>
+    </div>
+
+    <div class="main">
+        <form action="" class="main-form">
+            <div class="input-wrap">
+                <p class="main-title">name: <span id="name-error" class="error"></span></p>               
+                <input type="text" id="name" class="main-input" placeholder="Vu Van A">
+            </div>
+
+            <div class="input-wrap">
+                <p class="main-title">Gender: <span id="gender-error" class="error"></span></p>
+                
+                <div class="main-select">
+                    <div><input type="radio" name="Gender">male</div>
+                    <div><input type="radio" name="Gender">female</div>
+                </div>
+            </div>
+            
+            <div class="input-wrap">
+                <p class="main-title">Address: <span id="address-error" class="error"></span></p>
+                
+                <input type="address" id="address" class="main-input" placeholder="Tav Viet, Hai duong, Viet Nam">
+            </div>
+
+            <div class="input-wrap">
+                <p class="main-title">email: <span id="email-error" class="error"></span></p>
+                
+                <input type="email" id="email" class="main-input" placeholder="vidu.@gmal.com">
+            </div>
+
+            <div class="input-wrap">
+                <p class="main-title">Password: <span id="password-error" class="error"></span></p>
+                
+                <input type="password" id="password" class="main-input">
+            </div>
+
+            <div class="input-wrap">
+                <p class="main-title">Re-enter Password: <span id="re-password-error" class="error"></span></p>
+                
+                <input type="password" id="re-password" class="main-input">
+            </div>
+
+            <div class="input-wrap">
+                <p class="main-title">Hobbies(optional):</p>
+                <input type="text" id="name" class="main-input">
+            </div>
+
+            <div class="footer">
+                <button type="submit" class="submit" onclick="return sign_in()">sign in</button>
+                <button type="button" class="reset" onclick="exit()">reset</button>
+            </div>
+        </form>
+    </div>
+
+ 
+        
+
+    
+
+    <script src="./action.js"></script>
+</body>
+</html>
